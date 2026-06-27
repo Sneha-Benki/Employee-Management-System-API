@@ -169,5 +169,3 @@ Through this project, I gained practical experience with:
 * Custom Exception Handling
 * Request validation using `@Valid`
 * API testing with Postman
-
----
