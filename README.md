@@ -1,4 +1,4 @@
-# Employee Management System API
+Employee Management System API
 
 Overview
 
@@ -154,7 +154,7 @@ Test scenarios covered:
 
 ---
 
-## 📚 Concepts Learned
+Concepts Learned
 
 Through this project, I gained practical experience with:
 
