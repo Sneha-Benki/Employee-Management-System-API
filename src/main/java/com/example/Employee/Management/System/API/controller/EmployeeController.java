@@ -4,6 +4,7 @@ import com.example.Employee.Management.System.API.dto.EmployeeRequestDTO;
 import com.example.Employee.Management.System.API.dto.EmployeeResponseDTO;
 import com.example.Employee.Management.System.API.exception.EmployeeNotFoundException;
 import com.example.Employee.Management.System.API.service.EmployeeService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @PostMapping
-    public EmployeeResponseDTO createEmployee(@RequestBody EmployeeRequestDTO employeeRequestDTO){
+    public EmployeeResponseDTO createEmployee(@Valid @RequestBody EmployeeRequestDTO employeeRequestDTO){
         EmployeeResponseDTO employeeResponseDTO  =  employeeService.createEmployee(employeeRequestDTO);
         return employeeResponseDTO;
     }
